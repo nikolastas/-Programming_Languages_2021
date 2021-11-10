@@ -1,0 +1,12 @@
+Q
+QSQ 
+addAndSquare((Q1, S1, PM1)):-
+                       
+                       not(visit((Q1,S1, _))),
+                       write("this was not in seen :"), write(Q1), write("  "), write(S1), write("  "), writeln(PM1),
+                       assert_seen((Q1,S1, PM1)). 
+
+
+addAndSquare((Q1, S1)) :- 
+                                   visit((Q1, S1)). 
+                                   /*write("Checking same state").*/
